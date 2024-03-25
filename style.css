@@ -1,0 +1,300 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: #c2c2c2;
+}
+::-webkit-scrollbar-thumb {
+    background: #828282;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #ffcc00;
+}
+
+/* Navbar */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 5px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.3);
+}
+nav img{
+    width: 180px;
+    height: 70px;
+}
+nav .navbar{
+  width: 95%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a{
+  font-weight: 90px;
+  font-size: 30px;
+  color: #020101;
+}
+
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 16px;
+}
+.navbar .menu a{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+}
+.navbar .menu a:hover{
+  color: #ffcc00;
+}
+
+/* home section styling */
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("/image/bg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size: 25px;
+  font-weight: 500px;
+  color: #ffffff;
+}
+.home .text-two{
+  color: #ffcc00;
+  font-size: 70px;
+  font-weight: 600;
+  margin-left: -3px;
+  justify-content: center;
+}
+.home .button{
+  margin: 0 14px;
+}
+
+/* tokoh Section Styling*/
+ section{
+  padding-top:70px;
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.anggota{
+  background-color: #000000;
+}
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.anggota .anggota-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  color: #ffff;
+}
+section .title span{
+  color: #ffcc00;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.anggota .anggota-details .left{
+  width: 45%;
+}
+.anggota .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+#sejarah{
+  margin-left: 50px;
+}
+.anggota-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #ffcc00;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+section .deskripsi{
+  color: #ffff;
+}
+.deskripsi h3{
+  color: #ffcc00;
+}
+.anggota-details .right p{
+  text-align: justify;
+  color: #ffffff;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 10px 36px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #ffcc00;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  padding: px 236px;
+  border-color: #fff;
+  background-color: #000000;
+  color: #ffcc00;
+}
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'arial' ;
+  color: #000000;
+}
+.description-container h2 {
+  color: var(--darkGray);
+  font-weight: bolder;
+}
+
+.hero-container > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-container > div {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 8px 0px rgba(1, 1, 1, 0.1);
+  border-top: 1px solid rgb(228, 228, 228);
+}
+.tengah {
+  text-align: center;
+  width: 100%;
+}
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.kolom .deskripsi {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'arial' ;
+  color: #000000;
+}
+ 
+.hero-container p {
+  font-size: 30px;
+  color: var(--gray);
+}
+
+.tutor-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-tutor {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-tutor img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.kartu-tutor p {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #ffcc00;
+}
+
+.partner-list {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.kartu-partner {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.kartu-partner img {
+  width: 150px;
+  border-radius: 50%;
+}
+/* news CSS */

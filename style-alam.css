@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+:root {
+  --darkGray: #2d3748;
+  --gray: #4a5568;
+  --grayLight: #f7fafc;
+  --primary: #6b46c1;
+}
+
+/* Navbar */
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 5px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #ffffff;
+  box-shadow: 0 7px 3px rgba(0, 0, 0, 0.3);
+}
+nav img{
+    width: 180px;
+    height: 70px;
+}
+nav .navbar{
+  width: 95%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a{
+  font-weight: 90px;
+  font-size: 30px;
+  color: #020101;
+ 
+}
+
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 16px;
+
+}
+.navbar .menu a{
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  padding: 6px 0;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.navbar .menu a:hover{
+  color: #ffcc00;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+.content-container {
+  min-height: 400px;
+  margin: 40px 0;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.content-container .card {
+  height: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.1);
+  transform: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(1, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.card > img {
+  object-fit: fill;
+  height: 240px;
+  width: 100%;
+}
+
+.card > .card-body {
+  padding: 20px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 0 15px 0 0;
+}
+
+.card p {
+  color: var(--gray);
+  font-size: 16px;
+}
+
+.card > .card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 0px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 400;
+  background: #ffffff;
+  color: var(--gray);
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  justify-content: space-between;
+}
+section .button button:hover{
+  padding: px 236px;
+  border-color: #fff;
+  background-color: #ffffff;
+  color: #ffcc00;
+}
+
+
+
+  
